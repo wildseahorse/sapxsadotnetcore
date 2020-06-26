@@ -1,1 +1,11 @@
+#!/bin/bash
+# bin/release
 
+cat <<EOF
+---
+config_vars:
+addons:
+default_process_types:
+  web: /bin/bash ./start.sh 
+
+EOF

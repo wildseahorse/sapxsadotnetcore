@@ -1,1 +1,8 @@
+#!/bin/bash
+# bin/detect <build-dir>
 
+if [ -f $1/appsettings.json ];
+    then exit 0
+fi
+
+exit 1 
